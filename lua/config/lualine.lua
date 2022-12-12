@@ -1,6 +1,6 @@
 local M = {}
 
-local overseer = require("overseer")
+--local overseer = require("overseer")
 -- Color table for highlights
 local colors = {
   bg = "#202328",
@@ -159,21 +159,22 @@ function M.setup()
 				"encoding",
  				"fileformat",
 				"filetype",
-				{"overseer",
-					label = '',     -- Prefix for task counts
-					colored = true, -- Color the task icons and counts
-					symbols = {
-						[overseer.STATUS.FAILURE] = "F:",
-						[overseer.STATUS.CANCELED] = "C:",
-						[overseer.STATUS.SUCCESS] = "S:",
-						[overseer.STATUS.RUNNING] = "R:",
-					},
-					unique = false,     -- Unique-ify non-running task count by name
-					name = nil,         -- List of task names to search for
-					name_not = false,   -- When true, invert the name search
-					status = nil,       -- List of task statuses to display
-					status_not = false, -- When true, invert the status search
-					}  },
+				--{"overseer",
+				--	label = '',     -- Prefix for task counts
+				--	colored = true, -- Color the task icons and counts
+				--	symbols = {
+				--		[overseer.STATUS.FAILURE] = "F:",
+				--		[overseer.STATUS.CANCELED] = "C:",
+				--		[overseer.STATUS.SUCCESS] = "S:",
+				--		[overseer.STATUS.RUNNING] = "R:",
+				--	},
+				--	unique = false,     -- Unique-ify non-running task count by name
+				--	name = nil,         -- List of task names to search for
+				--	name_not = false,   -- When true, invert the name search
+				--	status = nil,       -- List of task statuses to display
+				--	status_not = false, -- When true, invert the status search
+				--	}
+      },
       lualine_y = { "progress" },
       lualine_z = { "location" },
     },
