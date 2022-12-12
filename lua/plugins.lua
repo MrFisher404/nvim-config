@@ -317,7 +317,12 @@ function M.setup()
 --#########################
 
 -- Local Overview
-    use { "ziontee113/neo-minimap" }
+    use {
+		"ziontee113/neo-minimap",
+		config = function()
+			require("config.minimap").setup()
+		end
+		}
 
 -- FileExplorer
     use {
