@@ -467,7 +467,7 @@ function M.setup()
 		use({
 			"folke/noice.nvim",
 			config = function()
-				require("noice").setup()
+				require("config.noice").setup()
 			end,
 			requires = {
 				-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
