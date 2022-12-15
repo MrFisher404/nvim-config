@@ -180,7 +180,7 @@ function M.setup()
       requires = "nvim-lua/plenary.nvim",
       cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles" },
       config = function ()
-        require("config.diffview")
+        require("config.diffview").setup()
       end
     }
 
@@ -197,14 +197,15 @@ function M.setup()
       cmd = { "MarkdownPreview" },
       requires = { "zhaozg/vim-diagram", "aklt/plantuml-syntax" },
     }
-    use {
-      "nvim-neorg/neorg",
-      config = function()
-        require("config.neorg").setup()
-      end,
-      ft = "norg",
-      after = "nvim-treesitter",
-      requires = { "nvim-lua/plenary.nvim", "Pocco81/TrueZen.nvim" },
+
+    -- Zk integration (zetttelkasten cli)
+    use
+    {
+      "mickael-menu/zk-nvim",
+      config = function ()
+        require("config.zk").setup()
+      end
+
     }
 
 
