@@ -616,7 +616,6 @@ function M.setup()
 		use {
 			"shortcuts/no-neck-pain.nvim",
 			tag = "*",
-			config = require("config.noneckpain").setup(),
 		}
 
 		-- Task runner
