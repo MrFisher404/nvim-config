@@ -6,10 +6,10 @@ function M.setup()
       ["core.norg.dirman"] = {
         config = {
           workspaces = {
-            work = "~/gitRepos/mrfisher404/notes/work",
-            home = "~/gitRepos/mrfisher404/notes/home",
-            planner = "~/gitRepos/mrfisher404/notes/gtd",
-            journal = "~/gitRepos/mrfisher404/notes/journal",
+            work = "~/notes/work",
+            home = "~/notes/home",
+            planner = "~/notes/gtd",
+            journal = "~/notes/journal",
           },
         },
       },
