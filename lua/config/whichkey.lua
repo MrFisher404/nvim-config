@@ -46,9 +46,8 @@ local function normal_keymap()
 
     b = {
       name = "Buffer",
-      c = { "<Cmd>BDelete this<Cr>", "Close Buffer" },
-      x = { "<Cmd>BDelete this!<Cr>", "Force Close Buffer" },
-      D = { "<Cmd>BWipeout other<Cr>", "Delete All Buffers" },
+      c = { "<Cmd>bdelete<Cr>", "Close Buffer" },
+      x = { "<Cmd>bdelete!<Cr>", "Force Close Buffer" },
       b = { "<Cmd>BufferLinePick<Cr>", "Pick a Buffer" },
       p = { "<Cmd>BufferLinePickClose<Cr>", "Pick & Close a Buffer" },
       f = { "<Cmd>JABSOpen<Cr>", "Find" },
@@ -173,13 +172,17 @@ local function normal_keymap()
 
 
     n = {
-      name = "Notes",
+      name = "Neorg",
+      c = { "<cmd>Neorg gtd capture<cr>", "Capture" },
+      u = { "<cmd>Neorg news<cr>", "Updates" },
+      d = { "<cmd>Neorg journal<cr>", "Diary" },
     },
 
     z = {
       name = "System",
       e = { "!!$SHELL<CR>", "Execute line" },
-      z = { "<cmd>lua require'telescope'.extensions.zoxide.list{}<cr>", "Zoxide" },
+      o = { "<cmd>lua require'telescope'.extensions.zoxide.list{}<cr>", "Zoxide" },
+      z = { "<cmd>NoNeckPain<cr>", "Zoxide" },
     },
     o = {
       name = "Open",
