@@ -20,7 +20,7 @@ local function keymappings(client, bufnr)
       c = { "<cmd>Lspsaga show_cursor_diagnostics<CR>", "Cursor Diagnostics" },
       i = { "<cmd>LspInfo<CR>", "Lsp Info" },
       f = { "<cmd>lua vim.lsp.buf.format()<CR>", "Formatting" },
-      p = { "<cmd>Lspsaga peek_definition<CR>", "Peek" },
+      h = { "<cmd>Lspsaga peek_definition<CR>", "HoverPeek" },
     },
   }
   if client.server_capabilities.document_formatting then
