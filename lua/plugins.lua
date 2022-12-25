@@ -171,27 +171,8 @@ function M.setup()
 			"nvim-neorg/neorg",
 			run = ":Neorg sync-parsers", -- This is the important bit!
 			config = function()
-				require("neorg").setup {
-					load = {
-						["core.defaults"] = {},
-						["core.norg.dirman"] = {
-							config = {
-								workspaces = {
-									work = "~/notes/work",
-									home = "~/notes/home",
-									planner = "~/notes/gtd",
-									journal = "~/notes/journal",
-								},
-							},
-						},
-						["core.gtd.base"] = {
-							config = {
-								workspace = "planner",
-							},
-						},
-					},
-				}
-			end,
+				require("config.neorg").setup()
+      end,
 			requires = "nvim-lua/plenary.nvim",
 		}
 

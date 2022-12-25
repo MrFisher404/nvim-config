@@ -13,11 +13,6 @@ function M.setup()
           },
         },
       },
-      ["core.gtd.base"] = {
-        config = {
-          workspace = "planner",
-        },
-      },
       ["core.norg.concealer"] = {
         config = { -- Note that this table is optional and doesn't need to be provided       -- Configuration here
         },
