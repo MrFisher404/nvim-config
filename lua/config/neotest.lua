@@ -28,7 +28,7 @@ function M.setup()
 				skipped = ""
 		},
     consumers = {
-      overseer = require("neotest.consumers.overseer"),
+      --overseer = require("neotest.consumers.overseer"),
     },
   }
 end

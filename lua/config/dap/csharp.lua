@@ -9,7 +9,7 @@ function M.setup()
   -- Adapter configuration
   dap.adapters.netcoredbg = {
     type = "executable",
-    command = install_dir .. '/packages/netcoredbg/netcoredbg',
+    command = install_dir .. '/bin/netcoredbg',
     args = { "--interpreter=vscode" },
   }
 
