@@ -173,7 +173,6 @@ local function normal_keymap()
 
     n = {
       name = "Neorg",
-      c = { "<cmd>Neorg gtd capture<cr>", "Capture" },
       u = { "<cmd>Neorg news<cr>", "Updates" },
       d = { "<cmd>Neorg journal<cr>", "Diary" },
     },
