@@ -169,7 +169,6 @@ function M.setup()
 
 		use {
 			"nvim-neorg/neorg",
-			run = ":Neorg sync-parsers", -- This is the important bit!
 			config = function()
 				require("config.neorg").setup()
       end,
