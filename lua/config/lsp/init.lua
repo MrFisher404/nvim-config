@@ -107,9 +107,6 @@ function M.on_attach(client, bufnr)
   -- Configure highlighting
   require("config.lsp.highlighter").setup(client, bufnr)
 
-  -- Configure formatting
-  require("config.lsp.null-ls.formatters").setup(client, bufnr)
-
   -- tagfunc
   if client.server_capabilities.definitionProvider then
     vim.api.nvim_buf_set_option(bufnr, "tagfunc", "v:lua.vim.lsp.tagfunc")
@@ -156,9 +153,6 @@ local opts = {
 require("config.lsp.handlers").setup()
 
 function M.setup()
-  -- null-ls
-  require("config.lsp.null-ls").setup(opts)
-
   -- Installer
   require("config.lsp.installer").setup(servers, opts)
 

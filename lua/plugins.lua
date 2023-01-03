@@ -80,6 +80,16 @@ function M.setup()
 		-- See Color
 		use { "norcalli/nvim-colorizer.lua" }
 
+    --System Clipboard
+    use { 
+      "EtiamNullam/deferred-clipboard.nvim",
+      config = function()
+        require("deferred-clipboard").setup{
+          --lazy = true,
+        }
+      end
+  }
+
 		--#########################
 		-- Appearance ------------
 		--#########################
@@ -390,7 +400,6 @@ function M.setup()
 				"cmp-nvim-lsp",
 				"neodev.nvim",
 				"vim-illuminate",
-				"null-ls.nvim",
 				"schemastore.nvim",
 				"typescript.nvim",
 				"nvim-navic",
@@ -404,7 +413,6 @@ function M.setup()
 				"WhoIsSethDaniel/mason-tool-installer.nvim",
 				"folke/neodev.nvim",
 				"RRethy/vim-illuminate",
-				"jose-elias-alvarez/null-ls.nvim",
 				{
 					"j-hui/fidget.nvim",
 					config = function()
