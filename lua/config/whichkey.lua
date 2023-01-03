@@ -175,7 +175,8 @@ local function normal_keymap()
       name = "Neorg",
       u = { "<cmd>Neorg news<cr>", "Updates" },
       d = { "<cmd>Neorg journal<cr>", "Diary" },
-      t = { "<cmd>lua require('config.notes').todo()<cr>", "Todo" }
+      t = { "<cmd>lua require('config.notes').todo()<cr>", "Todo" },
+      n = { "<cmd>lua require('config.notes').new_note()<cr>", "New Note" }
     },
 
     z = {
