@@ -470,9 +470,6 @@ function M.setup()
 				"hrsh7th/cmp-nvim-lsp",
 				"hrsh7th/cmp-nvim-lsp-signature-help",
 				{ "onsails/lspkind-nvim", module = { "lspkind" } },
-				-- "hrsh7th/cmp-calc",
-				-- "f3fora/cmp-spell",
-				-- "hrsh7th/cmp-emoji",
 				{
 					"L3MON4D3/LuaSnip",
 					wants = { "friendly-snippets", "vim-snippets" },
@@ -484,6 +481,9 @@ function M.setup()
 				"honza/vim-snippets",
 			},
 		}
+
+    -- Completion sources
+    use{"petertriho/cmp-git", requires = "nvim-lua/plenary.nvim"}
 
 		use { "ii14/emmylua-nvim" } -- better neovim api completion
 
