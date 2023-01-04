@@ -20,6 +20,3 @@ local function status_line()
     pct_thru_file
   )
 end
-
--- vim.opt.statusline = status_line()
-vim.opt.winbar = status_line()
